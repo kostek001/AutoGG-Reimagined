@@ -124,7 +124,7 @@ tasks {
         inputs.property("id", mod_id)
         inputs.property("name", mod_name)
         val java = if (project.platform.mcMinor >= 18) {
-            17 // If we are playing on version 1.18, set the java version to 17
+            21 // If we are playing on version 1.18, set the java version to 17
         } else {
             // Else if we are playing on version 1.17, use java 16.
             if (project.platform.mcMinor == 17)
