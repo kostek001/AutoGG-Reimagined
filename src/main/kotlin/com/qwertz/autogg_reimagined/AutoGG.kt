@@ -51,7 +51,7 @@ class CommandEventHandler {
                     ggSaid = true
                     val GGMessage = config.GGMessage
                     if (IsEnabled().EnabledCheck()) {
-                        Minecraft.getMinecraft().thePlayer.sendChatMessage("/ac $GGMessage")
+                        Minecraft.getMinecraft().thePlayer.sendChatMessage("$GGMessage")
                         if (config.GG2ndSwitch) {
                             sendDelayedMsg()
                         }
@@ -80,7 +80,7 @@ class CommandEventHandler {
 
             delay(time)
             val GG2ndMessage = config.GG2ndMessage
-            Minecraft.getMinecraft().thePlayer.sendChatMessage("/ac $GG2ndMessage")
+            Minecraft.getMinecraft().thePlayer.sendChatMessage("$GG2ndMessage")
         }
 
     }
